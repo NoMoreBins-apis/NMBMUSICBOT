@@ -1,0 +1,62 @@
+{
+    "name": "࿏ 𝐍𝐌𝐁 𝐌𝐔𝐒𝐈𝐂 𝐁𝐎𝐓 ࿏",
+    "description": "𝐍𝐌𝐁 𝐌𝐔𝐒𝐈𝐂 𝐁𝐎𝐓, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://graph.org/file/de126268f8cef53390434.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "Fallen",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Get this value from",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from ",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A token ",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "Fill your user id here. (Must be integer)",
+        "value": "",
+        "required": true
+      },
+      "SESSION": {
+        "description": "A pyrogram v2 string session from @StringFatherBot",
+        "value": "",
+        "required": true
+      },
+      "SUDO_USERS": {
+        "description": "The user id with a space.",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT_CHAT": {
+        "description": "Link of your telegram support group. (Must pe public)",
+        "value": "https://t.me/stripe_xD",
+        "required": false
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
